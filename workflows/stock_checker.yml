@@ -29,23 +29,21 @@ jobs:
           pip install requests yfinance fear-greed
 
       # --- 1. STOCK ALERTER STEP ---
-      # Connects DISCORD_STOCK_WEBHOOK secret specifically to stock_alert.py
       - name: Run Stock Alerter Script
         env:
-          DISCORD_STOCK_WEBHOOK: ${{ secrets.DISCORD_STOCK_WEBHOOK }}
+          DISCORD_STOCK_WEBHOOK: ${{ secrets.DISCORD_PORTFOLIO_TEST_WEBHOOK }}
         run: python alerts/stock_alert.py
 
       # --- 2. MARKET SENTIMENT STEP ---
-      # Connects DISCORD_SENTIMENT_WEBHOOK secret specifically to sentiment_alert.py
       - name: Run Market Sentiment Script
         env:
-          DISCORD_SENTIMENT_WEBHOOK: ${{ secrets.DISCORD_SENTIMENT_WEBHOOK }}
+          DISCORD_SENTIMENT_WEBHOOK: ${{ secrets.DISCORD_PORTFOLIO_TEST_WEBHOOK }}
         run: python alerts/sentiment_alert.py
 
-      # --- 3. AUTO-COMMIT WATCHLIST UPDATES ---
+      # --- 3. HEARTBEAT SCRIPT STEP ---
       - name: Run Heartbeat Script
         env:
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_STOCK_WEBHOOK }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_PORTFOLIO_TEST_WEBHOOK }}
         run: python alerts/heartbeat.py
 
       # --- 4. AUTO-COMMIT WATCHLIST UPDATES ---
@@ -54,4 +52,3 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git diff --quiet || (git add alerts/watchlist.json alerts/sentiment_state.json && git commit -m "Update alert state" && git push)
-          
