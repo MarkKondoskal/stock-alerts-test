@@ -1,0 +1,57 @@
+name: Stock & Sentiment Alert Pipeline
+
+on:
+  schedule:
+    # Runs every 15 minutes during US trading hours (Mon-Fri)
+    - cron: '*/15 13-21 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+  run-alert-monitors:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: stock-alert-pipeline
+      cancel-in-progress: false
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: |
+          pip install requests yfinance fear-greed
+
+      # --- 1. STOCK ALERTER STEP ---
+      # Connects DISCORD_STOCK_WEBHOOK secret specifically to stock_alert.py
+      - name: Run Stock Alerter Script
+        env:
+          DISCORD_STOCK_WEBHOOK: ${{ secrets.DISCORD_STOCK_WEBHOOK }}
+        run: python alerts/stock_alert.py
+
+      # --- 2. MARKET SENTIMENT STEP ---
+      # Connects DISCORD_SENTIMENT_WEBHOOK secret specifically to sentiment_alert.py
+      - name: Run Market Sentiment Script
+        env:
+          DISCORD_SENTIMENT_WEBHOOK: ${{ secrets.DISCORD_SENTIMENT_WEBHOOK }}
+        run: python alerts/sentiment_alert.py
+
+      # --- 3. AUTO-COMMIT WATCHLIST UPDATES ---
+      - name: Run Heartbeat Script
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_STOCK_WEBHOOK }}
+        run: python alerts/heartbeat.py
+
+      # --- 4. AUTO-COMMIT WATCHLIST UPDATES ---
+      - name: Auto-commit State and Watchlist Updates
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git diff --quiet || (git add alerts/watchlist.json alerts/sentiment_state.json && git commit -m "Update alert state" && git push)
+          
