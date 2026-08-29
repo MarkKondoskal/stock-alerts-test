@@ -1,5 +1,6 @@
 import os
 import time
+import math  
 import warnings
 import requests
 import yfinance as yf
