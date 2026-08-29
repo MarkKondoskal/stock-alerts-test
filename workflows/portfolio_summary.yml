@@ -50,7 +50,7 @@ jobs:
 
       - name: Execute Portfolio Action
         env:
-          DISCORD_PORTFOLIO_WEBHOOK: ${{ secrets.DISCORD_PORTFOLIO_WEBHOOK }}
+          DISCORD_PORTFOLIO_WEBHOOK: ${{ secrets.DISCORD_PORTFOLIO_TEST_WEBHOOK }}
         run: |
           if [ "${{ github.event.inputs.action }}" = "STATUS" ]; then
             python portfolio/marks_portfolio_update.py STATUS
