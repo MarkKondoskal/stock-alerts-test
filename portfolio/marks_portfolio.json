@@ -1,23 +1,826 @@
 {
-  "TSM": [4, 93.16],
-  "SPGI": [4, 382.43],
-  "CRM": [3, 234.96],
-  "DUOL": [4, 259.42],
-  "MSFT": [4, 356.07],
-  "AMD": [2, 77.10],
-  "ADBE": [4, 297.99],
-  "ORCL": [5, 120.42],
-  "APP": [4, 364.76],
-  "GOOG": [5, 167.42],
-  "AMZN": [14, 206.03],
-  "ASML": [3, 676.56],
-  "ZETA": [171, 19.97],
-  "NVO": [29, 66.99],
-  "META": [5, 639.64],
-  "UBER": [19, 80.89],
-  "MA": [5, 527.55],
-  "VST": [10, 144.22],
-  "PGY": [100, 14.28],
-  "SOFI": [194, 16.30],
-  "CELH": [39, 33.35]
+  "APP": {
+    "shares": 4.0,
+    "avg_price": 364.76,
+    "transactions": [
+      {
+        "date": "2026-07-29",
+        "action": "BUY",
+        "shares": 2.0,
+        "price": 417.53,
+        "fee": 0.0
+      },
+      {
+        "date": "2026-08-13",
+        "action": "BUY",
+        "shares": 1.0,
+        "price": 313.0,
+        "fee": 0.0
+      },
+      {
+        "date": "2026-08-19",
+        "action": "BUY",
+        "shares": 1.0,
+        "price": 310.99,
+        "fee": 0.0
+      }
+    ],
+    "realized_pl": 0.0
+  },
+  "ZETA": {
+    "shares": 151.0,
+    "avg_price": 19.93,
+    "transactions": [
+      {
+        "date": "2025-12-29",
+        "action": "BUY",
+        "shares": 20.0,
+        "price": 19.849,
+        "fee": 0.0
+      },
+      {
+        "date": "2025-12-29",
+        "action": "BUY",
+        "shares": 20.0,
+        "price": 19.77,
+        "fee": 0.0
+      },
+      {
+        "date": "2026-01-23",
+        "action": "BUY",
+        "shares": 22.0,
+        "price": 21.75,
+        "fee": 0.0
+      },
+      {
+        "date": "2026-02-11",
+        "action": "BUY",
+        "shares": 20.0,
+        "price": 16.34,
+        "fee": 0.0
+      },
+      {
+        "date": "2026-04-17",
+        "action": "BUY",
+        "shares": 6.0,
+        "price": 17.95,
+        "fee": 0.0
+      },
+      {
+        "date": "2026-05-29",
+        "action": "BUY",
+        "shares": 3.0,
+        "price": 19.93,
+        "fee": 0.0
+      },
+      {
+        "date": "2026-05-29",
+        "action": "BUY",
+        "shares": 30.0,
+        "price": 20.26,
+        "fee": 0.0
+      },
+      {
+        "date": "2026-05-29",
+        "action": "BUY",
+        "shares": 1.0,
+        "price": 20.25,
+        "fee": 0.0
+      },
+      {
+        "date": "2026-07-02",
+        "action": "BUY",
+        "shares": 49.0,
+        "price": 20.7,
+        "fee": 0.0
+      },
+      {
+        "date": "2026-08-13",
+        "action": "SELL",
+        "shares": 20.0,
+        "price": 29.2,
+        "fee": 0.0
+      }
+    ],
+    "realized_pl": 185.46
+  },
+  "SGOV": {
+    "shares": 11.0,
+    "avg_price": 100.66,
+    "transactions": [
+      {
+        "date": "2026-07-29",
+        "action": "BUY",
+        "shares": 11.0,
+        "price": 100.66,
+        "fee": 0.0
+      }
+    ],
+    "realized_pl": 0.0
+  },
+  "ORCL": {
+    "shares": 5.0,
+    "avg_price": 120.43,
+    "transactions": [
+      {
+        "date": "2026-07-29",
+        "action": "BUY",
+        "shares": 5.0,
+        "price": 120.43,
+        "fee": 0.0
+      }
+    ],
+    "realized_pl": 0.0
+  },
+  "MSFT": {
+    "shares": 3.0,
+    "avg_price": 389.48,
+    "transactions": [
+      {
+        "date": "2026-02-11",
+        "action": "BUY",
+        "shares": 1.0,
+        "price": 418.19,
+        "fee": 0.0
+      },
+      {
+        "date": "2026-07-02",
+        "action": "BUY",
+        "shares": 2.0,
+        "price": 375.12,
+        "fee": 0.0
+      }
+    ],
+    "realized_pl": 0.0
+  },
+  "MGNI": {
+    "shares": 3.0,
+    "avg_price": 13.03,
+    "transactions": [
+      {
+        "date": "2026-05-21",
+        "action": "BUY",
+        "shares": 30.0,
+        "price": 13.03,
+        "fee": 0.0
+      },
+      {
+        "date": "2026-05-29",
+        "action": "SELL",
+        "shares": 27.0,
+        "price": 13.45,
+        "fee": 0.0
+      }
+    ],
+    "realized_pl": 11.34
+  },
+  "ADBE": {
+    "shares": 4.0,
+    "avg_price": 297.99,
+    "transactions": [
+      {
+        "date": "2025-09-16",
+        "action": "BUY",
+        "shares": 1.0,
+        "price": 350.6,
+        "fee": 0.0
+      },
+      {
+        "date": "2026-01-22",
+        "action": "BUY",
+        "shares": 2.0,
+        "price": 294.22,
+        "fee": 0.0
+      },
+      {
+        "date": "2026-04-17",
+        "action": "BUY",
+        "shares": 1.0,
+        "price": 252.9,
+        "fee": 0.0
+      }
+    ],
+    "realized_pl": 0.0
+  },
+  "DUOL": {
+    "shares": 4.0,
+    "avg_price": 259.42,
+    "transactions": [
+      {
+        "date": "2025-08-15",
+        "action": "BUY",
+        "shares": 1.0,
+        "price": 337.4,
+        "fee": 0.0
+      },
+      {
+        "date": "2025-08-15",
+        "action": "BUY",
+        "shares": 1.0,
+        "price": 337.3,
+        "fee": 0.0
+      },
+      {
+        "date": "2025-11-18",
+        "action": "BUY",
+        "shares": 2.0,
+        "price": 181.49,
+        "fee": 0.0
+      }
+    ],
+    "realized_pl": 0.0
+  },
+  "CRM": {
+    "shares": 1.0,
+    "avg_price": 244.46,
+    "transactions": [
+      {
+        "date": "2025-09-08",
+        "action": "BUY",
+        "shares": 1.0,
+        "price": 244.46,
+        "fee": 0.0
+      }
+    ],
+    "realized_pl": 0.0
+  },
+  "ASML": {
+    "shares": 3.0,
+    "avg_price": 675.27,
+    "transactions": [
+      {
+        "date": "2025-01-03",
+        "action": "BUY",
+        "shares": 1.0,
+        "price": 705.0,
+        "fee": 0.0
+      },
+      {
+        "date": "2025-01-29",
+        "action": "BUY",
+        "shares": 1.0,
+        "price": 677.05,
+        "fee": 0.0
+      },
+      {
+        "date": "2025-04-17",
+        "action": "BUY",
+        "shares": 1.0,
+        "price": 643.76,
+        "fee": 0.0
+      }
+    ],
+    "realized_pl": 0.0
+  },
+  "NVO": {
+    "shares": 29.0,
+    "avg_price": 420.99,
+    "transactions": [
+      {
+        "date": "2025-02-21",
+        "action": "BUY",
+        "shares": 8.0,
+        "price": 613.7,
+        "fee": 0.0
+      },
+      {
+        "date": "2025-04-08",
+        "action": "BUY",
+        "shares": 5.0,
+        "price": 427.4,
+        "fee": 0.0
+      },
+      {
+        "date": "2025-04-22",
+        "action": "BUY",
+        "shares": 1.0,
+        "price": 380.05,
+        "fee": 0.0
+      },
+      {
+        "date": "2026-02-09",
+        "action": "BUY",
+        "shares": 15.0,
+        "price": 318.8,
+        "fee": 0.0
+      }
+    ],
+    "realized_pl": 0.0
+  },
+  "GOOG": {
+    "shares": 2.0,
+    "avg_price": 241.08,
+    "transactions": [
+      {
+        "date": "2025-09-11",
+        "action": "BUY",
+        "shares": 2.0,
+        "price": 241.08,
+        "fee": 0.0
+      }
+    ],
+    "realized_pl": 0.0
+  },
+  "META": {
+    "shares": 5.0,
+    "avg_price": 638.68,
+    "transactions": [
+      {
+        "date": "2025-11-07",
+        "action": "BUY",
+        "shares": 3.0,
+        "price": 619.0,
+        "fee": 0.0
+      },
+      {
+        "date": "2026-02-11",
+        "action": "BUY",
+        "shares": 2.0,
+        "price": 668.2,
+        "fee": 0.0
+      }
+    ],
+    "realized_pl": 0.0
+  },
+  "MA": {
+    "shares": 5.0,
+    "avg_price": 526.75,
+    "transactions": [
+      {
+        "date": "2025-11-20",
+        "action": "BUY",
+        "shares": 3.0,
+        "price": 533.59,
+        "fee": 0.0
+      },
+      {
+        "date": "2026-02-13",
+        "action": "BUY",
+        "shares": 2.0,
+        "price": 516.5,
+        "fee": 0.0
+      }
+    ],
+    "realized_pl": 0.0
+  },
+  "AMZN": {
+    "shares": 11.0,
+    "avg_price": 221.1,
+    "transactions": [
+      {
+        "date": "2025-11-26",
+        "action": "BUY",
+        "shares": 7.0,
+        "price": 230.3,
+        "fee": 0.0
+      },
+      {
+        "date": "2026-02-06",
+        "action": "BUY",
+        "shares": 4.0,
+        "price": 205.0,
+        "fee": 0.0
+      }
+    ],
+    "realized_pl": 0.0
+  },
+  "UBER": {
+    "shares": 19.0,
+    "avg_price": 80.89,
+    "transactions": [
+      {
+        "date": "2025-12-24",
+        "action": "BUY",
+        "shares": 19.0,
+        "price": 80.89,
+        "fee": 0.0
+      }
+    ],
+    "realized_pl": 0.0
+  },
+  "VST": {
+    "shares": 10.0,
+    "avg_price": 144.0,
+    "transactions": [
+      {
+        "date": "2026-05-20",
+        "action": "BUY",
+        "shares": 10.0,
+        "price": 144.0,
+        "fee": 0.0
+      }
+    ],
+    "realized_pl": 0.0
+  },
+  "PGY": {
+    "shares": 100.0,
+    "avg_price": 14.26,
+    "transactions": [
+      {
+        "date": "2026-05-29",
+        "action": "BUY",
+        "shares": 100.0,
+        "price": 14.26,
+        "fee": 0.0
+      }
+    ],
+    "realized_pl": 0.0
+  },
+  "SOFI": {
+    "shares": 194.0,
+    "avg_price": 16.29,
+    "transactions": [
+      {
+        "date": "2026-06-03",
+        "action": "BUY",
+        "shares": 124.0,
+        "price": 16.92,
+        "fee": 0.0
+      },
+      {
+        "date": "2026-07-29",
+        "action": "BUY",
+        "shares": 70.0,
+        "price": 15.17,
+        "fee": 0.0
+      }
+    ],
+    "realized_pl": 0.0
+  },
+  "CELH": {
+    "shares": 39.0,
+    "avg_price": 33.3,
+    "transactions": [
+      {
+        "date": "2026-07-06",
+        "action": "BUY",
+        "shares": 39.0,
+        "price": 33.3,
+        "fee": 0.0
+      }
+    ],
+    "realized_pl": 0.0
+  },
+  "cash_flows": [
+    {
+      "date": "2024-05-29",
+      "amount": 50000.0,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2024-06-04",
+      "amount": 30000.0,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2024-09-06",
+      "amount": 30000.0,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2024-10-18",
+      "amount": 25000.0,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2024-10-28",
+      "amount": 900.0,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2024-10-31",
+      "amount": -135900.0,
+      "type": "WITHDRAWAL"
+    },
+    {
+      "date": "2025-02-21",
+      "amount": 5000.0,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2025-02-21",
+      "amount": -90.4,
+      "type": "WITHDRAWAL"
+    },
+    {
+      "date": "2025-04-08",
+      "amount": 5000.0,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2025-04-17",
+      "amount": 2000.0,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2025-08-25",
+      "amount": -278.28,
+      "type": "WITHDRAWAL"
+    },
+    {
+      "date": "2025-09-11",
+      "amount": 5000.0,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2025-11-07",
+      "amount": 10000.0,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2025-11-07",
+      "amount": 1000.0,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2025-11-20",
+      "amount": 10000.0,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2025-11-26",
+      "amount": 10000.0,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2025-12-24",
+      "amount": 10000.0,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2025-12-26",
+      "amount": 5000.0,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2025-12-30",
+      "amount": 5000.0,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2026-01-26",
+      "amount": -2139.5,
+      "type": "WITHDRAWAL"
+    },
+    {
+      "date": "2026-02-06",
+      "amount": 10000.0,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2026-02-09",
+      "amount": 17000.0,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2026-02-19",
+      "amount": 12.11,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2026-03-31",
+      "amount": 8000.0,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2026-04-09",
+      "amount": -8247.53,
+      "type": "WITHDRAWAL"
+    },
+    {
+      "date": "2026-05-20",
+      "amount": 10000.0,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2026-05-28",
+      "amount": 12000.0,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2026-06-03",
+      "amount": 10000.0,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2026-06-11",
+      "amount": 2.64,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2026-07-02",
+      "amount": 21000.0,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2026-07-06",
+      "amount": 45.47,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2026-07-07",
+      "amount": -5881.78,
+      "type": "WITHDRAWAL"
+    },
+    {
+      "date": "2026-07-29",
+      "amount": 10000.0,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2026-07-29",
+      "amount": 4000.0,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2026-07-30",
+      "amount": 46.0,
+      "type": "DEPOSIT"
+    },
+    {
+      "date": "2026-08-14",
+      "amount": -9317.97,
+      "type": "WITHDRAWAL"
+    }
+  ],
+  "closed_positions": [
+    {
+      "ticker": "NOW",
+      "closure_date": "2026-08-19",
+      "total_cost_basis": 614.93,
+      "total_realized_pl": 114.19,
+      "transactions": [
+        {
+          "date": "2026-05-21",
+          "action": "BUY",
+          "shares": 1.0,
+          "price": 102.63,
+          "fee": 0.0
+        },
+        {
+          "date": "2026-05-21",
+          "action": "BUY",
+          "shares": 5.0,
+          "price": 102.46,
+          "fee": 0.0
+        },
+        {
+          "date": "2026-08-19",
+          "action": "SELL",
+          "shares": 6.0,
+          "price": 121.52,
+          "fee": 0.0
+        }
+      ],
+      "final_avg_price": 0.0,
+      "final_shares": 0
+    },
+    {
+      "ticker": "SCHD",
+      "closure_date": "2026-08-30",
+      "total_cost_basis": 0,
+      "total_realized_pl": 0.0,
+      "transactions": [],
+      "final_avg_price": 0.0,
+      "final_shares": 0
+    },
+    {
+      "ticker": "TLT",
+      "closure_date": "2026-08-30",
+      "total_cost_basis": 0,
+      "total_realized_pl": 0.0,
+      "transactions": [],
+      "final_avg_price": 0.0,
+      "final_shares": 0
+    },
+    {
+      "ticker": "EFX",
+      "closure_date": "2026-05-29",
+      "total_cost_basis": 450.22,
+      "total_realized_pl": -125.0,
+      "transactions": [
+        {
+          "date": "2025-04-16",
+          "action": "BUY",
+          "shares": 2.0,
+          "price": 225.11,
+          "fee": 0.0
+        },
+        {
+          "date": "2026-05-29",
+          "action": "SELL",
+          "shares": 2.0,
+          "price": 162.61,
+          "fee": 0.0
+        }
+      ],
+      "final_avg_price": 0.0,
+      "final_shares": 0
+    },
+    {
+      "ticker": "DVN",
+      "closure_date": "2026-08-30",
+      "total_cost_basis": 0,
+      "total_realized_pl": 0.0,
+      "transactions": [],
+      "final_avg_price": 0.0,
+      "final_shares": 0
+    },
+    {
+      "ticker": "CVX",
+      "closure_date": "2026-08-30",
+      "total_cost_basis": 0,
+      "total_realized_pl": 0.0,
+      "transactions": [],
+      "final_avg_price": 0.0,
+      "final_shares": 0
+    },
+    {
+      "ticker": "CP",
+      "closure_date": "2026-08-30",
+      "total_cost_basis": 0,
+      "total_realized_pl": 0.0,
+      "transactions": [],
+      "final_avg_price": 0.0,
+      "final_shares": 0
+    },
+    {
+      "ticker": "VOO",
+      "closure_date": "2026-08-30",
+      "total_cost_basis": 0,
+      "total_realized_pl": 0.0,
+      "transactions": [],
+      "final_avg_price": 0.0,
+      "final_shares": 0
+    },
+    {
+      "ticker": "CVS",
+      "closure_date": "2026-08-30",
+      "total_cost_basis": 0,
+      "total_realized_pl": 0.0,
+      "transactions": [],
+      "final_avg_price": 0.0,
+      "final_shares": 0
+    },
+    {
+      "ticker": "VICI",
+      "closure_date": "2026-08-30",
+      "total_cost_basis": 0,
+      "total_realized_pl": 0.0,
+      "transactions": [],
+      "final_avg_price": 0.0,
+      "final_shares": 0
+    },
+    {
+      "ticker": "DIS",
+      "closure_date": "2026-08-30",
+      "total_cost_basis": 0,
+      "total_realized_pl": 0.0,
+      "transactions": [],
+      "final_avg_price": 0.0,
+      "final_shares": 0
+    },
+    {
+      "ticker": "TSLA",
+      "closure_date": "2026-08-30",
+      "total_cost_basis": 0,
+      "total_realized_pl": 0.0,
+      "transactions": [],
+      "final_avg_price": 0.0,
+      "final_shares": 0
+    },
+    {
+      "ticker": "BABA",
+      "closure_date": "2026-08-30",
+      "total_cost_basis": 0,
+      "total_realized_pl": 0.0,
+      "transactions": [],
+      "final_avg_price": 0.0,
+      "final_shares": 0
+    },
+    {
+      "ticker": "NBIS",
+      "closure_date": "2026-08-06",
+      "total_cost_basis": 1068.97,
+      "total_realized_pl": 369.53,
+      "transactions": [
+        {
+          "date": "2026-07-29",
+          "action": "BUY",
+          "shares": 7.0,
+          "price": 152.71,
+          "fee": 0.0
+        },
+        {
+          "date": "2026-08-06",
+          "action": "SELL",
+          "shares": 7.0,
+          "price": 205.5,
+          "fee": 0.0
+        }
+      ],
+      "final_avg_price": 0.0,
+      "final_shares": 0
+    }
+  ]
 }
