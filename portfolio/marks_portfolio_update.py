@@ -11,7 +11,7 @@ import yfinance as yf
 # Configuration
 # -----------------------------------------------------------------------------
 
-WEBHOOK_URL = os.environ.get("DISCORD_PORTFOLIO_WEBHOOK")
+WEBHOOK_URL = os.environ.get("DISCORD_PORTFOLIO_TEST_WEBHOOK")
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PORTFOLIO_FILE = os.path.join(BASE_DIR, "marks_portfolio.json")
 CHART_FILE = os.path.join(BASE_DIR, "portfolio_chart.png")
