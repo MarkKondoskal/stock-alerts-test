@@ -1,4 +1,6 @@
 {
-  "vix": {},
-  "fear_greed_state": null
+  "vix": {
+    "15.0": "2026-08-31"
+  },
+  "fear_greed_state": "normal"
 }
