@@ -1,4 +1,6 @@
 {
-  "vix": {},
+  "vix": {
+    "15.0": "2026-09-03"
+  },
   "fear_greed_state": "normal"
 }
